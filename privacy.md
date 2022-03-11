@@ -1,4 +1,5 @@
 ---
+title: Privacy
 layout: post
 ---
 
