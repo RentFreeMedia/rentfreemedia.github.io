@@ -1,1 +1,22 @@
-theme: jekyll-theme-midnight
+title: Rent Free Media
+description: A Publishing Platform Built with Django and Wagtail
+remote_theme: pages-themes/midnight@v0.2.0
+permalink: /posts/:categories/:year-:month-:day-:title:output_ext
+markdown: kramdown
+paginate: 5
+paginate_path: "/:num/"
+date_format: "%b %-d, %Y"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+collections:
+  - about
+  - terms
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
