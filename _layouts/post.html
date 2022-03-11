@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" sizes="any">
+    <link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
+    <link type="application/rss+xml" rel="alternate" title="Rentfree.Media" href="https://rentfree.media/feed.xml">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scripts.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include head-custom.html %}
+  </head>
+  <body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-xs navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="{{ '/assets/img/navbar-logo.svg?v=' | append: site.github.build_revision | relative_url }}" alt="..." /></a>
+        <div id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead-post">
+    <div class="container">
+        <h3 class="section-heading text-uppercase">{{ page.title }}</h3>
+
+        <h4 class="section-subheading text-muted">{{ page.intro }}</h4>
+    </div>
+</header>
+
+<content>
+	<div class="container">
+		<div class="col col-md-9 my-4 mx-auto">
+		{{ content }}
+		</div>
+	</div>
+</content>
+<!-- Footer-->
+<footer class="footer py-2">
+    <div class="container">
+        <div class="row align-items-center m-4">
+            <div class="col-lg-4 text-lg-start">&copy; Rentfree.Media</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-primary btn-social mx-2" href="https://twitter.com/rentfreemedia"><i class="bi bi-twitter text-dark"></i></a>
+                <a class="btn btn-primary btn-social mx-2" href="https://facebook.com/rentfreemedia"><i class="bi bi-facebook text-dark"></i></a>
+                <a class="btn btn-primary btn-social mx-2" href="https://instagram.com/rentfreemedia"><i class="bi bi-instagram text-dark"></i></a>
+                <a class="btn btn-primary btn-social mx-2" href="https://github.com/rentfreemedia"><i class="bi bi-github text-dark"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="text-white nav-link text-decoration-none me-3" href="{{ site.url }}/privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
