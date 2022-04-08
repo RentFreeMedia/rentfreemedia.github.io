@@ -468,7 +468,7 @@ Most of this has been copied and pasted from the core Django `PasswordResetToken
 
 Next, the default timeout on Django generated tokens is a few days.  You don't want to change the default for *all* tokens, because that would make password reset tokens lingering in users' email accounts valid indefinitely.  What we've done above with that in mind isn't rocket science, we've just copied and pasted the whole `check_token` method from the core Django `PasswordResetTokenGenerator` class, and changed the timeout to `3153600000` seconds instead of the default. Translated to something more readable, that amount of seconds is equal to 100 years.
 
-As you can see here, the Django genereated tokens aren't stored in the database, rather they are generated for the user, and then generated again when Django checks them. If any of the database fields have changed since the token was generated, or if the time limit has expired, the token will check `False`, otherwise `True` will be returned by the token check method.
+As you can see here, the Django generated tokens aren't stored in the database, rather they are generated for the user, and then generated again when Django checks them. If any of the database fields have changed since the token was generated, or if the time limit has expired, the token will check `False`, otherwise `True` will be returned by the token check method.
 
 With everything in place, [curl](https://curl.se/){:target="_blank" rel="noopener"} is a good tool to use to check and make sure all of this works.
 
