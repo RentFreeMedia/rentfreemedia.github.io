@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Media Distribution with Django, Nginx, and Wagtail
-author: Neal
+author: Robert
 categories: [wagtail, django, nginx, media, devops]
 image: /assets/img/posts/media.jpg
 alt: media
