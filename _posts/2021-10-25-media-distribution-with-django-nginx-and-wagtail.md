@@ -345,7 +345,7 @@ On the Django side of things, this all plays very nicely with [django-storages](
 
 If you're using Wagtail as I am, the [wagtailmedia](https://github.com/torchbox/wagtailmedia){:target="_blank" rel="noopener"} addon gives you a nice admin UI to manage your media files with.  Lets take a look at what happens to a media file uploaded to a private S3 bucket in the Wagtail admin with django-storages and wagtailmedia:
 
-![wagtailmedia with django-storages](https://rentfree.media/assets/images/wagtailmedia.jpg){:.img}
+![wagtailmedia with django-storages](https://rentfreemedia.github.io/assets/images/wagtailmedia.jpg){:.img}
 
 You can see in the URL at the bottom of the screenshot that when I hover over the file name to get the URL to it, django-storages has generated a signed URL for me to use since this file is in a private S3 bucket.  That URL is only good for 10 minutes, but it's the one Nginx will use to get the file and fill its local disk cache when a user requests the file in question.  Subsequent requests during that day will be served from the Nginx cache, but only after the user has been passed to the Django back end first for authentication. 
 
