@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Complex Custom Field Pagination in Django
-author: Neal
+author: Robert
 categories: [wagtail, pagination, django]
 image: /assets/img/posts/code.jpg
 alt: code
