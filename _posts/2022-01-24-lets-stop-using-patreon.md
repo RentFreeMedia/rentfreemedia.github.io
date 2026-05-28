@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stop Using Patreon, Substack, and Apple
-author: Neal
+author: Robert
 categories: [media, patreon, wagtail, django]
 image: /assets/img/posts/money.jpg
 alt: money
